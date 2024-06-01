@@ -1,0 +1,12 @@
+var guestList = ["Ali", "Najam", "Kazim", "Lubna"];
+var guestCantCome = guestList[0];
+console.log(guestCantCome, "is not joining us tonight.");
+guestList.splice(0, 1, "Muhammad");
+console.log("Good News! we have found a bigger table for dinner.");
+guestList.unshift("Bilal");
+guestList.push("Zubair");
+var middleIndex = Math.floor(guestList.length / 2);
+guestList.splice(middleIndex, 0, "Raheel");
+console.log("Updated list of guests");
+guestList.forEach(function (oneByOne) { return console.log("Salam, ".concat(oneByOne, ",would you join us on dinner tonight?")); });
+var avg = Math.floor(guestList.length / 2);
